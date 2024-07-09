@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">INICIO</a>
+        </nav>
+    </header>
+    <section class="titulo">
+        <h1 class="presentacion__contenido__titulo">Encriptador
+            <strong class="titulo-destaque">De TEXTO!</strong>
+        </h1>
+    </section>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <p class="presentacion__contenido__texto">Ingrese el texto aquí!</p>
+            <textarea id="valorUsuario" class="inputEncriptador" placeholder="Escribe aquí tu texto..."></textarea>
+            <div class="presentacion__enlaces">
+                <button onclick="encriptarTexto();" class="encriptador">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="encriptador">Desencriptar</button>
+            </div>
+        </section>
+        <section class="presentacion__contenido">
+            <p class="presentacion__contenido__texto">Código encriptado</p>
+            <div id="resultado">
+                <img id="no-message" src="assets/nohaymensaje.png" alt="Ningún mensaje fue encriptado" style="display: none;">
+                <textarea id="textoResultado" class="inputEncriptador" placeholder="El resultado aparecerá aquí..." readonly style="display: none;"></textarea>
+            </div>
+            <div class="presentacion__enlaces">
+                <button onclick="copiarTexto();" id="copiarBtn" class="desencriptador" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por lenteraindrober airtentermain © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
